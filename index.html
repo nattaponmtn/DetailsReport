@@ -328,23 +328,46 @@
                         <h4 class="text-lg font-semibold mb-3 border-b pb-2">รายละเอียดต้นทุนดำเนินการและบทสรุป</h4>
                         <div>
                             <h5 class="text-md font-semibold text-gray-800">2.6 การวิเคราะห์ต้นทุนดำเนินการ (Operating Cost)</h5>
-                            <p class="text-gray-700"><strong>6.1. ต้นทุนพลังงาน (Energy Cost)</strong></p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
-                                <li><strong>สมมติฐาน:</strong> ค่าไฟ 5.00 บาท/kWh, ทำงาน 3 ชม./วัน, โหลดเฉลี่ย 80%</li>
-                                <li><strong>กำลังไฟที่ใช้จริง (เฉลี่ย):</strong> 30 kW × 80% = 24 kW</li>
-                                <li><strong>พลังงานที่ใช้ต่อวัน:</strong> 24 kW × 3 ชั่วโมง = 72 kWh (ยูนิต)</li>
-                                <li><strong>ค่าไฟฟ้าต่อเดือน (30 วัน):</strong> 10,800 บาท / เดือน</li>
-                                <li><strong>ค่าไฟฟ้าต่อปี:</strong> 129,600 บาท / ปี</li>
-                            </ul>
-                             <p class="text-gray-700 mt-2"><strong>6.2. ต้นทุนการบำรุงรักษา (Maintenance Cost)</strong></p>
+                            <p class="text-gray-700">เปรียบเทียบต้นทุนการดำเนินงานระหว่างระบบไฟฟ้า (ใหม่) และระบบ P.T.O. (เดิม) โดยอ้างอิงการทำงาน 3 ชั่วโมง/วัน:</p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <!-- Diesel Cost (Current) -->
+                                <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                    <h6 class="font-semibold text-gray-800">A. ต้นทุน P.T.O. (Diesel - ปัจจุบัน)</h6>
+                                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2">
+                                        <li><strong>ราคาน้ำมัน:</strong> 30.94 บาท/ลิตร</li>
+                                        <li><strong>อัตราสิ้นเปลือง (มีโหลด):</strong> 15 ลิตร/ชม.</li>
+                                        <li><strong>ค่าใช้จ่าย/วัน (3 ชม.):</strong> 1,392.30 บาท</li>
+                                        <li><strong class="text-red-700">ค่าใช้จ่าย/ปี: ~508,190 บาท</strong></li>
+                                    </ul>
+                                </div>
+                                <!-- Electric Cost (New) -->
+                                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                    <h6 class="font-semibold text-gray-800">B. ต้นทุนระบบไฟฟ้า (โครงการใหม่)</h6>
+                                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2">
+                                        <li><strong>ค่าไฟ:</strong> 5.00 บาท/kWh</li>
+                                        <li><strong>กำลังไฟที่ใช้ (เฉลี่ย 80%):</strong> 24 kW</li>
+                                        <li><strong>ค่าใช้จ่าย/วัน (3 ชม.):</strong> 360.00 บาท</li>
+                                        <li><strong class="text-green-700">ค่าใช้จ่าย/ปี: ~129,600 บาท</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                             <p class="text-gray-700 mt-4"><strong>6.2. ต้นทุนการบำรุงรักษา (Maintenance Cost)</strong></p>
                              <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
-                                <li>ต่ำกว่าระบบ P.T.O. อย่างมีนัยสำคัญ</li>
-                                <li><strong>ต้นทุนบำรุงรักษาประมาณ:</strong> 2,000 - 5,000 บาท / ปี</li>
+                                <li><strong>ระบบ P.T.O.:</strong> สูง (เกี่ยวข้องกับเครื่องยนต์, น้ำมันเครื่อง, P.T.O. shaft)</li>
+                                <li><strong>ระบบไฟฟ้า:</strong> ต่ำมาก (ประมาณ 2,000 - 5,000 บาท / ปี สำหรับมอเตอร์/เกียร์)</li>
                             </ul>
                         </div>
                         <div>
                             <h5 class="text-md font-semibold text-gray-800">2.7 สรุป (โครงการ TMR)</h5>
-                            <p class="text-gray-700">การแปลงระบบ TMR Samurai 5 เป็นมอเตอร์ไฟฟ้า 30kW มีความเป็นไปได้สูงทางวิศวกรรม ระบบไฟฟ้าเดิมสามารถรองรับได้ โดยมีต้นทุนการติดตั้งเริ่มต้นประมาณ <strong>161,500 - 281,000 บาท</strong> และจะมีต้นทุนดำเนินการ (ค่าไฟ + บำรุงรักษา) ประมาณ <strong>131,600 - 134,600 บาทต่อปี</strong> (อ้างอิงที่การใช้งาน 3 ชั่วโมง/วัน)</p>
+                            <p class="text-gray-700">การแปลงระบบ TMR Samurai 5 เป็นมอเตอร์ไฟฟ้า 30kW มีความเป็นไปได้สูงทางวิศวกรรม และระบบไฟฟ้าเดิมสามารถรองรับได้</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2">
+                                <li><strong>ต้นทุนติดตั้ง (CAPEX):</strong> <strong>161,500 - 281,000 บาท</strong></li>
+                                <li><strong>ต้นทุนดำเนินการ (OPEX) - ไฟฟ้า:</strong> <strong>~131,600 - 134,600 บาท/ปี</strong></li>
+                                <li><strong>ต้นทุนดำเนินการ (OPEX) - Diesel:</strong> <strong>~508,190 บาท/ปี</strong></li>
+                            </ul>
+                            <p class="text-gray-700 mt-2 font-semibold text-green-700">ข้อสรุป: โครงการนี้สามารถประหยัดต้นทุนดำเนินการได้ประมาณ <strong>373,000 - 376,000 บาทต่อปี</strong> โดยมีระยะเวลาคืนทุน (Payback Period) <strong>น้อยกว่า 1 ปี</strong></p>
                         </div>
                     </div>
                 </div>
